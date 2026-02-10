@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "../Assets/style.css";
 
 export default function Portfolio() {
-  const typedRef = useRef(null);
 
   useEffect(() => {
     const typed = new Typed("#element", {
@@ -28,25 +27,28 @@ export default function Portfolio() {
     <>
       <header>
         <span>Sohail's Portfolio</span>
+
         <nav>
           <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Services">Services</a></li>
+
             <li>
               <a
                 href="https://github.com/Developer-Sohail786"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Projects
               </a>
             </li>
+
             <li>
               <a
                 href="https://wa.me/918918716256"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Contact Me
               </a>
@@ -61,11 +63,18 @@ export default function Portfolio() {
             <p>
               Hello, This is <span>Sohail Khan</span>
             </p>
+
             <p>and I'm a Passionate</p>
-            <span id="element" ref={typedRef}></span>
+
+            <span id="element"></span>
           </div>
+
           <div className="right">
-            <img src="/images/bg.png" alt="background" />
+            <img
+              src="/images/bg.png"
+              alt="background"
+              loading="lazy"
+            />
           </div>
         </section>
 
@@ -74,9 +83,11 @@ export default function Portfolio() {
         <section className="second-sec">
           <p>My progress so far</p>
           <h1>Achievements</h1>
+
           <div className="box">
+
             <div className="vertical">
-              <img src="/images/Bethany.png" alt="Bethany" className="top-img" />
+              <img src="/images/Bethany.png" alt="Bethany" className="top-img" loading="lazy" />
               <p className="center">2014-2021</p>
               <p>
                 I've completed my HSLC class 10 from Bethany Convent School. I was
@@ -86,7 +97,7 @@ export default function Portfolio() {
             </div>
 
             <div className="vertical">
-              <img src="/images/BBC.png" alt="BBC" className="top-img BBC-img" />
+              <img src="/images/BBC.png" alt="BBC" className="top-img BBC-img" loading="lazy" />
               <p className="center">2021-2023</p>
               <p>
                 I have completed my HS from B.Borooah College with commerce
@@ -96,13 +107,13 @@ export default function Portfolio() {
             </div>
 
             <div className="vertical">
-              <img src="/images/Nielit.png" alt="Nielit" className="top-img" />
+              <img src="/images/Nielit.png" alt="Nielit" className="top-img" loading="lazy" />
               <p className="center">2024-June</p>
               <p>I have done an internship at NIELIT Guwahati in Cybersecurity</p>
             </div>
 
             <div className="vertical">
-              <img src="/images/Nielit.png" alt="Nielit" className="top-img" />
+              <img src="/images/Nielit.png" alt="Nielit" className="top-img" loading="lazy" />
               <p className="center">2025-April</p>
               <p>
                 I have completed a bootcamp in IoT with AI which was conducted by
@@ -111,7 +122,7 @@ export default function Portfolio() {
             </div>
 
             <div className="vertical">
-              <img src="/images/GCU.png" alt="GCU" className="top-img" />
+              <img src="/images/GCU.png" alt="GCU" className="top-img" loading="lazy" />
               <p className="center">2023-2026</p>
               <p>
                 Currently I'm pursuing BCA at Girijananda Chowdhury University,
@@ -119,6 +130,7 @@ export default function Portfolio() {
                 development, Currently I secure a CGPA of 8.2
               </p>
             </div>
+
           </div>
         </section>
 
@@ -129,17 +141,14 @@ export default function Portfolio() {
           <p>Click on the icon to get to the profile</p>
 
           <div className="social-items">
+
             <div className="anchor">
               <a
                 href="https://www.linkedin.com/in/sohail-khan-8a5b36371/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                <img
-                  src="/images/linkedin.png"
-                  alt="LinkedIn"
-                  className="social-img"
-                />
+                <img src="/images/linkedin.png" alt="LinkedIn" className="social-img" loading="lazy" />
               </a>
               <p className="social-desc">Connect with me on LinkedIn</p>
             </div>
@@ -148,13 +157,9 @@ export default function Portfolio() {
               <a
                 href="https://github.com/Developer-Sohail786"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                <img
-                  src="/images/github-logo.png"
-                  alt="GitHub"
-                  className="social-img"
-                />
+                <img src="/images/github-logo.png" alt="GitHub" className="social-img" loading="lazy" />
               </a>
               <p className="social-desc">View my projects and source code</p>
             </div>
@@ -163,13 +168,9 @@ export default function Portfolio() {
               <a
                 href="https://www.instagram.com/sohailkhan_n19"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                <img
-                  src="/images/instagram-logo.png"
-                  alt="Instagram"
-                  className="social-img"
-                />
+                <img src="/images/instagram-logo.png" alt="Instagram" className="social-img" loading="lazy" />
               </a>
               <p className="social-desc">See what I'm up to beyond coding</p>
             </div>
@@ -178,18 +179,15 @@ export default function Portfolio() {
               <a
                 href="https://wa.me/918918716256"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                <img
-                  src="/images/Whatsapp-logo.png"
-                  alt="WhatsApp"
-                  className="social-img"
-                />
+                <img src="/images/Whatsapp-logo.png" alt="WhatsApp" className="social-img" loading="lazy" />
               </a>
               <p className="social-desc">
                 Message me directly on WhatsApp for quick chats or collaborations
               </p>
             </div>
+
           </div>
         </section>
 
@@ -232,6 +230,7 @@ export default function Portfolio() {
 
           <div className="sec-right" id="Services">
             <h1>Service offered</h1>
+
             <div className="service">
               <i className="fas fa-code"></i>
               <p>Web Development (MERN Stack)</p>
@@ -259,6 +258,7 @@ export default function Portfolio() {
         <h3>SOHAIL'S PORTFOLIO WEBSITE</h3>
 
         <div className="footer" id="About">
+
           <div className="footer-first">
             <h3>About Me</h3>
             <ul>
@@ -294,26 +294,21 @@ export default function Portfolio() {
             <ul>
               <li>Email: youremail@example.com</li>
               <li>Phone: +91 9876543210</li>
+
               <li>
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>
               </li>
+
               <li>
-                <a
-                  href="https://linkedin.com/in/yourusername"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </a>
               </li>
             </ul>
           </div>
+
         </div>
 
         <div className="footer-text">
